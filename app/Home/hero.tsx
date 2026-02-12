@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="bg-[#f8f8f8]">
       <div className="flex flex-col md:flex-row">
         <div>
-          <p className="mt-10 ml-4 md:ml-30">
+          <p className="mt-10 ml-4 md:ml-30 ">
             Phonico - Your Gateway to USA Connectivity
           </p>
           <img
@@ -14,7 +14,7 @@ const Hero = () => {
             src="https://phonico.com/images/blueLine.svg"
             alt=""
           />
-          <h1 className="text-6xl font-semibold ml-4 md:ml-30 mt-5">
+          <h1 className="text-6xl md:font-semibold   ml-4 md:ml-30 mt-5">
             Stay Connected With <br />
             <span className="text-[#ec3c65] mt-2 mb-2">Phonico</span> eSIM
             Across <br />
