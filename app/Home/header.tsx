@@ -62,7 +62,7 @@ const Header: React.FC = () => {
 
           <div className="hidden md:flex flex-row gap-10 mr-20">
             <Link href="/">
-              <li className="list-none mt-6 font-semibold text-[#ec3c65] underline decoration-[#ec3c65] decoration-4">
+              <li className="list-none md:bg-white  md:text-black mt-6 font-semibold text-[#ec3c65] underline decoration-[#ec3c65] decoration-4">
                 Home
               </li>
             </Link>{" "}
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
               </button>
             </Link>
             <Link href="/login">
-              <button className="flex items-center justify-center gap-2 font-bold rounded text-white p-2 h-12 w-35 bg-[#ee5e7f] hover:bg-[#ec3c65]">
+              <button className="flex items-center justify-center gap-2 font-bold rounded  text-white p-2 h-12 w-35 bg-[#ee5e7f] hover:bg-[#ec3c65]">
                 <LogIn className="w-5 h-5" />
                 Login
               </button>

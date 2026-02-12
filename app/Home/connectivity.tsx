@@ -3,7 +3,7 @@ import React from "react";
 const Connectivity = () => {
   return (
     <>
-      <div className="mt-10 ml-20  flex flex-col md:flex-row gap-10  p-4 md:p-10">
+      <div className="mt-10  md:ml-30 flex flex-col md:flex-row gap-10  p-4 md:p-10">
         <div className="md:w-1/3 flex flex-col items-center md:items-start">
           <h1 className="font-semibold text-3xl sm:text-5xl mt-10 text-center md:text-left">
             Why Choose <br />
