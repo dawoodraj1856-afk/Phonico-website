@@ -3,7 +3,7 @@ import React from "react";
 const Connectivity = () => {
   return (
     <>
-      <div className="mt-10  md:ml-30 flex flex-col md:flex-row gap-10  p-4 md:p-10">
+      <div className="mt-10  md:ml-20 flex flex-col md:flex-row gap-30  p-4 md:p-10">
         <div className="md:w-1/3 flex flex-col items-center md:items-start">
           <h1 className="font-semibold text-3xl sm:text-5xl mt-10 text-center md:text-left">
             Why Choose <br />
@@ -33,7 +33,7 @@ const Connectivity = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-6 p-4 sm:p-6 mt-10 bg-white   shadow rounded-2xl justify-center items-center mx-4 sm:mx-auto max-w-7xl">
+      <div className="flex flex-col md:flex-row gap-6 p-4 sm:p-6 mt-10 bg-white   shadow rounded-2xl justify-center items-center mx-4 sm:mx-auto max-w-[1100px]">
         <h1 className="font-bold text-3xl text-center mb-4 md:mb-0 md:mr-6">
           Uninterrupted <br /> Connectivity <br /> Across the USA
         </h1>
@@ -74,7 +74,7 @@ const Connectivity = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-10 mt-10 p-4 md:p-10 bg-[#eeebeb] rounded-3xl mx-4 sm:mx-auto max-w-7xl items-center">
+      <div className="flex flex-col md:flex-row gap-10 mt-10 p-4 md:p-10 bg-[#eeebeb] rounded-3xl mx-4 sm:mx-auto max-w-[1100px] items-center">
         <div className="md:w-1/2 flex flex-col items-center md:items-start">
           <h1 className="font-semibold text-3xl sm:text-5xl text-center md:text-left">
             Introducing a World <br /> of Connectivity with <br />

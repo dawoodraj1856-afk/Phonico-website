@@ -117,7 +117,7 @@ const Package = () => {
 
       {/* Coverage Banner */}
       <div className="mt-10">
-        <div className="bg-[#fad9e3] p-2 mt-10 rounded-3xl w-full sm:w-[700px] mx-auto h-auto sm:h-56 flex items-center justify-center">
+        <div className="bg-[#fad9e3] p-2 mt-10 rounded-3xl w-full sm:w-[1100px] mx-auto h-auto sm:h-56 flex items-center justify-center">
           <h1 className="font-bold text-3xl sm:text-4xl text-center">
             Full Coverage With the Best Prepaid <br />
             <span className="text-[#f17a96]">USA</span> eSIM Plans
@@ -129,7 +129,7 @@ const Package = () => {
           <br /> eSIM in 3 easy steps!
         </h1>
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-10 px-4 sm:px-10 justify-center sm:justify-between text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row gap-30 mt-10 px-4 sm:px-10 justify-center  text-center sm:text-left">
           <div>
             <h1 className="font-bold text-2xl">1. Choose Your Plan</h1>
             <p className="font-semibold text-sm sm:text-base">
