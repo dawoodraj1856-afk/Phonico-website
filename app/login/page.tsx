@@ -41,7 +41,8 @@ const page = () => {
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 px-4 sm:px-6 lg:px-20 mt-10">
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
           <img
-            className="rounded-2xl w-full max-w-sm h-120 object-cover"
+            className="w-full h-auto rounded-2xl mt-2"
+            
             src="/blue.jpg"
             alt="eSIM Network"
           />
