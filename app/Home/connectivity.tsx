@@ -75,12 +75,12 @@ const Connectivity = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-10 mt-10 p-4 md:p-10 bg-[#eeebeb] rounded-3xl mx-4 sm:mx-auto max-w-[1100px] items-center">
-        <div className="md:w-1/2 flex flex-col items-center md:items-start">
-          <h1 className="font-semibold text-3xl sm:text-5xl text-center md:text-left">
+        <div className="md:w-1/2 flex flex-col  md:items-start">
+          <h1 className="font-semibold text-3xl sm:text-5xl mb-10  md:text-left">
             Introducing a World <br /> of Connectivity with <br />
             the <span className="text-[#ec3c65]">Phonico</span> eSIM <br /> App
           </h1>
-          <p className="font-semibold text-sm sm:text-base mt-6 text-center md:text-left">
+          <p className="font-semibold text-sm sm:text-base  text-center md:text-left mb-5">
             Download our eSIM App for monitoring your real-time data usage. You
             can also use this app to activate your eSIM, manage profiles, and
             get updates on new features and promotions. You can find this app on
@@ -103,7 +103,7 @@ const Connectivity = () => {
 
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <img
-            className="w-64 sm:w-96 mt-6 md:mt-0"
+            className="w-64 sm:w-90 mt-10 md:mt-0"
             src="https://phonico.com/_next/image/?url=%2Fimages%2FmobileImg.png&w=1920&q=75"
             alt=""
           />
