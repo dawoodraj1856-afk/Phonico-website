@@ -89,12 +89,14 @@ const Connectivity = () => {
           <p className="font-bold mt-6 text-sm sm:text-lg text-center md:text-left">
             Download the App now
           </p>
-          <div className="flex flex-row gap-4 mt-4 justify-center md:justify-start">
+          <div className="flex flex-col md:gap-4 mt-4 justify-center md:flex-row  md:justify-start">
             <img
+              className="w-40 md:ml-0 ml-30  "
               src="https://phonico.com/images/appleLink.svg"
               alt="Apple Store"
             />
             <img
+              className="w-40 ml-30 md:ml-0 md:mt-0 mt-4"
               src="https://phonico.com/images/playLink.svg"
               alt="Play Store"
             />

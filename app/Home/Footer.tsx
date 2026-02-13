@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-between bg-white px-5 md:px-20 py-10 gap-10">
-        <div className="flex flex-col md:w-1/3 ml-10">
+        <div className="flex flex-col md:w-1/3  ml-10">
           <img
             src="https://phonico.com/_next/image/?url=%2Fimages%2FsiteLogo.png&w=128&q=75"
             alt="Phonico Logo"
