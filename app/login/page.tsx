@@ -37,14 +37,12 @@ const page = () => {
   return (
     <div className="bg-[#f7f7f7] min-h-screen">
       <Header />
-
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 px-4 sm:px-6 lg:px-20 mt-10">
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-10 max-w-6xl mx-auto px-4 py-10">
+        <div className="md:w-1/2">
           <img
-            className="w-full h-auto rounded-2xl mt-2"
-            
+            className="w-full mt-3 h-auto rounded-2xl"
             src="/blue.jpg"
-            alt="eSIM Network"
+            alt="Phonico eSIM"
           />
         </div>
 
@@ -59,7 +57,7 @@ const page = () => {
 
           {!isLoggedIn ? (
             <>
-              <div className="flex flex-col mt-4">
+              <div className="flex flex-col mt-2">
                 <label htmlFor="email" className="font-medium mb-1">
                   Enter Email
                 </label>
@@ -74,7 +72,7 @@ const page = () => {
               </div>
 
               {/* Password */}
-              <div className="flex flex-col mt-4">
+              <div className="flex flex-col mt-2">
                 <label htmlFor="password" className="font-medium mb-1">
                   Enter Password
                 </label>
@@ -91,7 +89,7 @@ const page = () => {
               {/* Submit Button */}
               <button
                 onClick={handleLogin}
-                className="mt-5 w-full sm:w-auto px-6 py-3 text-white bg-pink-400 hover:bg-[#f06989] font-bold rounded self-center lg:self-start"
+                className="mt-2 w-full sm:w-113 px-6 py-3 text-white bg-pink-400 hover:bg-[#f06989] font-bold rounded self-center lg:self-start"
               >
                 Submit
               </button>
