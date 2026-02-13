@@ -141,70 +141,71 @@ const page = () => {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   return (
-    <div className="bg-pink-100 min-h-screen">
-      <Header />
+    <>
+      <div className="bg-pink-100 min-h-screen">
+        <Header />
 
-      <div className="text-center mt-10 px-4 sm:px-6 lg:px-20">
-        <h1 className="font-bold text-pink-400 text-3xl sm:text-4xl lg:text-5xl">
-          Our Blogs
-        </h1>
-        <h2 className="mt-3 text-2xl sm:text-3xl lg:text-5xl font-semibold">
-          Learn with <span className="text-pink-400">Phonico</span>
-        </h2>
-        <p className="font-semibold text-md sm:text-lg lg:text-xl mt-3">
-          Stay informed and sweeten your eSIM experience with our expert
-          insights and practical tips.
-        </p>
+        <div className="text-center mt-10 px-4 sm:px-6 lg:px-20">
+          <h1 className="font-bold text-pink-400 text-3xl sm:text-4xl lg:text-5xl">
+            Our Blogs
+          </h1>
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-5xl font-semibold">
+            Learn with <span className="text-pink-400">Phonico</span>
+          </h2>
+          <p className="font-semibold text-md sm:text-lg lg:text-xl mt-3">
+            Stay informed and sweeten your eSIM experience with our expert
+            insights and practical tips.
+          </p>
 
-        <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
-          <input
-            className="p-3 border border-gray-200 bg-white w-full sm:w-72 lg:w-96 rounded"
-            placeholder="Search blogs"
-            type="text"
-          />
-          <button className="font-bold rounded p-3 w-full sm:w-32 bg-[#ee5e7f] hover:bg-[#ec3c65] text-white">
-            Search
-          </button>
-        </div>
-      </div>
-
-      <div className="mt-16 px-4 sm:px-6 lg:px-20">
-        <h3 className="font-bold text-xl sm:text-2xl mb-4 text-center sm:text-left">
-          Categories to Explore
-        </h3>
-        <div className="flex flex-wrap justify-center sm:justify-center gap-3 bg-white p-4 rounded-2xl">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              className={`font-semibold px-3 py-1 rounded ${
-                selectedCategory === cat
-                  ? "bg-pink-400 text-white"
-                  : "hover:text-pink-400"
-              }`}
-              onClick={() => setSelectedCategory(cat)}
-            >
-              {cat}
+          <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
+            <input
+              className="p-3 border border-gray-200 bg-white w-full sm:w-72 lg:w-96 rounded"
+              placeholder="Search blogs"
+              type="text"
+            />
+            <button className="font-bold rounded p-3 w-full sm:w-32 bg-[#ee5e7f] hover:bg-[#ec3c65] text-white">
+              Search
             </button>
+          </div>
+        </div>
+
+        <div className="mt-16 px-4 sm:px-6 lg:px-20">
+          <h3 className="font-bold text-xl sm:text-2xl mb-4 text-center sm:text-left">
+            Categories to Explore
+          </h3>
+          <div className="flex flex-wrap justify-center sm:justify-center gap-3 bg-white p-4 rounded-2xl">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                className={`font-semibold px-3 py-1 rounded ${
+                  selectedCategory === cat
+                    ? "bg-pink-400 text-white"
+                    : "hover:text-pink-400"
+                }`}
+                onClick={() => setSelectedCategory(cat)}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-4 mt-10 px-4 sm:px-6 lg:px-20">
+          {Gallery[selectedCategory].map((img) => (
+            <div key={img.id} className="bg-white rounded-xl shadow-lg p-3">
+              <img
+                src={img.src}
+                alt={img.title}
+                className="rounded-xl w-full h-48 object-cover"
+              />
+              <h2 className="font-bold mt-2">{img.title}</h2>
+              <p className="text-gray-600">{img.content}</p>
+            </div>
           ))}
         </div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4 sm:px-6 lg:px-20">
-        {Gallery[selectedCategory].map((img) => (
-          <div key={img.id} className="bg-white rounded-xl shadow-lg p-3">
-            <img
-              src={img.src}
-              alt={img.title}
-              className="rounded-xl w-full h-48 object-cover"
-            />
-            <h2 className="font-bold mt-2">{img.title}</h2>
-            <p className="text-gray-600">{img.content}</p>
-          </div>
-        ))}
-      </div>
-
       <Footer />
-    </div>
+    </>
   );
 };
 
